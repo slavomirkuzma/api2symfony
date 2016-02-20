@@ -1,40 +1,55 @@
 {
-    "name": "creads/api2symfony",
-    "description": "PHP library to automatically generate Symfony2 controllers from API specifications (RAML, Blueprint, Swagger...)",
-    "type": "library",
-    "keywords": ["php", "raml", "symfony", "api", "converter"],
-    "license": "MIT",
-    "homepage": "http://creads.fr",
-    "authors": [
-        {
-            "name": "Quentin",
-            "email": "q.pautrat@creads.org",
-            "homepage": "https://github.com/qpautrat",
-            "role": "Developer"
-        },
-        {
-            "name": "Damien Pitard",
-            "email": "damien.pitard@gmail.com",
-            "homepage": "https://github.com/pitpit",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "alecsammon/php-raml-parser": "0.6.3",
-        "symfony/twig-bundle": "~2.6",
-        "symfony/filesystem": "~2.6"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "4.*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Creads\\Api2Symfony\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Creads\\Tests\\": "tests/"
-        }
-    }
+	"name" : "creads/api2symfony",
+	"description" : "PHP library to automatically generate Symfony2 controllers from API specifications (RAML, Blueprint, Swagger...)",
+	"type" : "library",
+	"keywords" : [
+		"php",
+		"raml",
+		"symfony",
+		"api",
+		"converter"
+	],
+	"license" : "MIT",
+	"homepage" : "http://creads.fr",
+	"authors" : [{
+			"name" : "Quentin",
+			"email" : "q.pautrat@creads.org",
+			"homepage" : "https://github.com/qpautrat",
+			"role" : "Developer"
+		}, {
+			"name" : "Damien Pitard",
+			"email" : "damien.pitard@gmail.com",
+			"homepage" : "https://github.com/pitpit",
+			"role" : "Developer"
+		}
+	],
+	"require" : {
+		"alecsammon/php-raml-parser" : "dev-master",
+		"symfony/twig-bundle" : "3.0.1",
+		"symfony/filesystem" : "3.0.1"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "4.*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Creads\\Api2Symfony\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Creads\\Tests\\" : "tests/"
+		}
+	},
+	"repositories" : [{
+			"type" : "vcs",
+			"url" : "git@github.com:slavomirkuzma/php-raml-parser.git"
+		}, {
+			"type" : "vcs",
+			"url" : "git@github.com:slavomirkuzma/api2symfony.git"
+		}, {
+			"type" : "vcs",
+			"url" : "git@github.com:slavomirkuzma/api2symfony-bundle.git"
+		}
+	]
 }
